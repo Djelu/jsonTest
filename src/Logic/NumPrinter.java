@@ -8,12 +8,12 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class JSONNumPrinter {
+public class NumPrinter {
 
     private int numsCount;
     private int threadsCount;
 
-    public JSONNumPrinter(File file) {
+    public NumPrinter(File file) {
 
         try (FileReader fileReader = new FileReader(file)){
 
