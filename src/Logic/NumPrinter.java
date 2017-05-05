@@ -30,13 +30,12 @@ public class NumPrinter {
 
     public void printNums(){
 
-        if((numsCount < 1)||(threadsCount < 0))
+        if((numsCount < 1)||(threadsCount < 1))
             System.out.println("Не правильные вводные данные:"+
                                 "\nКоличество чисел   = "+numsCount+
                                 "\nКоличество потоков = "+threadsCount);
         else {
             if(numsCount < threadsCount) threadsCount = numsCount;
-            if(threadsCount < 1) threadsCount = 1;
 
             int[][] ranges = createRanges();
 
