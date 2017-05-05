@@ -39,7 +39,6 @@ public class NumPrinter {
 
             int[][] ranges = createRanges();
 
-
             Thread[] threads = new Thread[threadsCount];
 
             for(int i=0; i<threadsCount;  i++) {
